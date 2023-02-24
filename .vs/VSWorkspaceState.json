@@ -3,9 +3,8 @@
     "",
     "\\assets",
     "\\assets\\css",
-    "\\assets\\js",
-    "\\assets\\webfonts"
+    "\\assets\\js"
   ],
-  "SelectedNode": "\\assets\\css\\noscript.css",
+  "SelectedNode": "\\elements.html",
   "PreviewInSolutionExplorer": false
 }
