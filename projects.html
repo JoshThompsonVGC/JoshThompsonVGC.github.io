@@ -118,7 +118,7 @@
 							<div class="iframe-container">
 								<iframe width="1000" height="651" src="https://www.youtube.com/embed/v6GLHAP_0Xw" title="Global Game Jam 2023 - Rooted Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 							</div>
-							<p1>This was a 2D top down puzzel game I made for the Global Game Jam 2023. This was made in Unity Engine using C# where I reamde a minigame from  <b><a href="https://youtu.be/u8sqDbN7-fg">Club Pengiun</a></b>. This uses a tile system which spawns the levels from JSON files with strings storing the tile data for the level which lets levels be easly modified.<br /></p1>
+							<p1>This was a 2D top down puzzel game I made for the Global Game Jam 2023. This was made in Unity Engine using C# where I reamde a minigame from  <b><a href="https://youtu.be/u8sqDbN7-fg">Club Pengiun</a></b>. This uses a tile system which spawns the levels from JSON files with strings storing the tile data for the level which lets levels be easly modified. When the player is spawned it gets passed starting node which is used to check if a tile is walkable<br /></p1>
 							<!--<p1>This was a solo project made for the Global Game Jam 2023. This project was made in Unity Engine using C# based on a minigame from <b><a href="https://youtu.be/u8sqDbN7-fg">Club Pengiun</a></b>. This game uses JSON files to load the levels which are comprised of tiles which are set up inside the JSON using a list which indicates which tile needs to be spawned.<br /></p1>-->
 							<p1>Global Game Jam Page: <b><a href="https://globalgamejam.org/2023/games/rooted-2-1">Rooted</a></b><br /></p1>
 						</div>
@@ -130,7 +130,9 @@
 							<div class="iframe-container">
 								<iframe width="1000" height="651" src="https://www.youtube.com/embed/qGLnRyKUXEo" title="AI  - Review Video - T017789k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 							</div>
-							<p1>This is showing Steering Behavoiurs, A* Pathfinding and a Finite State Machine created using Unity Engine C#. </p1>
+							<p1>This is showing Steering Behavoiurs, A* Pathfinding and a Finite State Machine created using Unity Engine C#.</p1>
+							<h2>Finite State Machine</h2>
+							<p1>The Finite State Machine I created uses Flee, Seek, Pursuit and Wander Steering Behavoiurs for the diffrent states. The base state for the slime is a roaming using the wander state which picks a random location around the slime. When the player enters a collision sphere the AI will then switchs into a Pursue Player state using Pursiut which uses the players velocity to get a location the player is moving to and then will try and intersept the player. The last state in the Finite State Machine is the SeekHealth State which is trigged when the slime drops below 80 health. When the slime drops below the health threshold it will then get all the active health pots on the map getting the closest pot using the Seek Steering Behaviour to move towards it also this state has the Flee so if the player moves close towards the slime it will try and avoid the player and get the health pot.</p1>
 						</div>
 					</li>
 					<li>
