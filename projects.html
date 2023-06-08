@@ -122,6 +122,11 @@
 							<p1>This is showing Steering Behavoiurs, A* Pathfinding and a Finite State Machine created using Unity Engine C#.</p1>
 							<h2>Finite State Machine</h2>
 							<p1>The Finite State Machine I created uses Flee, Seek, Pursuit, and Wander Steering Behavoiurs for the different states. The base state for the slime is a roaming using the wander state which picks a random location around the slime. When the player enters a collision sphere the AI will then switches into a Pursue Player state using Pursuit which uses the player's velocity to get a location the player is moving to and then will try and intercept the player. The last state in the Finite State Machine is the SeekHealth State which is triggered when the slime drops below 80 health. When the slime drops below the health threshold it will then get all the active health pots on the map getting the closest pot using the Seek Steering Behaviour to move towards it also this state has the Flee so if the player moves close towards the slime it will try and avoid the player and get the health pot.</p1>
+							<h2>Fuzzy Logic + AI Creation</h2>
+							<div class="iframe-container">
+								<iframe width="1280" height="720" src="https://www.youtube.com/embed/kWQmoxgvAj8" title="AI - Review Video Draft 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+							<p1>For this project, I had to create a game creating an AI to control the Player and Enemies. In this project, I used a Finite State Machine to control both AIs but for the decision-making, I used Fuzzy Logic which passes a value into a graph which would then pass an ENUM to change the state.</p1>
 						</div>
 					</li>
 					<li>
